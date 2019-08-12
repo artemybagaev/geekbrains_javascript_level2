@@ -6,7 +6,7 @@ const goods = [
   { title: 'Shoes', price: 250 },
 ];
 
-// добавил значения по-умолчанию
+// добавил значения по-умолчанию!
 const renderGoodsItem = (title = 'noname', price = '500') => {
   return `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
 };
