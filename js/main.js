@@ -50,7 +50,7 @@ function createProduct (i) {
                         <div class="desc">
                             <h3>${this.name}</h3>
                             <p>${this.price} $</p>
-                            <button class="buy-btn" 
+                            <button class="buy-btn"
                             data-id="${this.id}"
                             data-name="${this.name}"
                             data-image="${this.img}"
@@ -71,7 +71,7 @@ function renderProducts () {
     for (item of list) {
         arr.push(item.createTemplate())
     }
-    document.querySelector('.products').innerHTML = arr.join();
+    document.querySelector('.products').innerHTML = arr.join('');
 }
 
 renderProducts ();
